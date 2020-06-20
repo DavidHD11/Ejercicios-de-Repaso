@@ -1,0 +1,39 @@
+.Icon{
+		width: 60px;
+		height: 60px;
+		float: right;
+		margin-right: 80px;
+	}
+
+body{
+		background-image: url(../img/fondo.jpg);
+    	background-size: cover;
+    	background-repeat: no-repeat;
+	}
+	section{
+		width: 80%;
+	}
+	fieldset{
+  		border: solid 2px black;
+  		margin-bottom: 10px;
+  		font-size: 30px;
+	}
+	legend{
+  		font-size: 50px;
+  		text-align: center;
+  		padding: 15px;
+  		font-weight: bold;
+  		border-radius: 20px;
+  		background-color: white;
+  		color: black;
+	}
+	h1{
+		text-align: center;
+		font-size: 70px;
+	}
+	li{
+		margin-left: 80px;
+	}	
+	h3{
+		text-align: center;
+	}

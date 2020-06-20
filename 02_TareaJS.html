@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 02 en JS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script>
+	//Use la funcion que indican pero dentro puse el comando document.getElemntById
+	//Y al h1 le asigne un ID llamado texto
+	//al innerHTML asigne un texto el cual es mi nombre
+	function cambiarTextos(){
+		document.getElementById("texto").innerHTML="Hector David Ramirez Castañeda";
+	}
+	</script>
+</head>
+<body>
+	<h1>Tarea 2 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="inicio"></a></h1>
+	<h1 id="texto">Tarea 02 con JavaScript</h1>
+	<!--Aqui indico que al hacer click mande lo del metodo cambiarTextos-->
+	<input type="button" value="ClicMe!" onclick="cambiarTextos();">
+
+</body>
+</html>

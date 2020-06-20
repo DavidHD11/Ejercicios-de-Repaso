@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 01 en JS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+	<h1>Tarea 1 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a> </h1> 
+	<script>
+		//Awui declare la variable que se uitlizara para introducir la calificacion
+		var total="";
+		//Ahora aqui mandara un mensaje en pantalla con el siguiente texto
+		var calificacion=prompt("Introduzca su calificacion obtenida");
+		//Coloque una conficion IF Else 
+		//Primero para obtener la calificacion
+		if (total == "") {
+			total=total+calificacion;
+		}
+		else{
+			total=total + "*" + calificacion;
+		}
+		//Imprime la calificacion que se teclea
+		document.write(total);
+		//Ahora la calificacion ya obtenida sera comparada con IF else
+		if (total >= 9.5) {
+			document.write(" Autonomo");
+		}
+		else if (total >= 8.5) {
+			document.write(" Destacado");
+		}
+		else if (total >= 7.5) {
+			document.write(" Satisfactorio");
+		}
+		else{
+			document.write(" No acreditado");
+		}
+		
+	</script>
+	
+
+</body>
+</html>
