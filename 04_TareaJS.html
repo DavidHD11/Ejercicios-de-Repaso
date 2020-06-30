@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea en JS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+	<h1>Tarea 04 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="inicio"></a></h1>
+	<h1>Tarea 04 con JavaScript</h1>
+	<h3>Da click en Suma! para realizar una operacion:</h3>
+	<h3 id="texto">Este sera tu resultado</h3>
+
+	<script>
+	//Aqui cree una funcion en donde sera llamada despues 
+		function sumatoria(){
+	//mi variable total la cual inicialice en 0 y guardara el resultado de los numeros que ingresen
+		var total=0;
+	//Usare un ciclo Do While para que el usuario ingrese los numero que el desea siempre y cuando sean mayores a 0
+		do{
+	//Aqui pido que ingrese un numero y la guardare en la variable num
+			var num=parseInt(prompt("Ingresa un numero"));
+	//Usare un ciclo IF Else para que se cumpla la condicion de que debe ser un numero positivo y sino mandara un mensaje de numero invalido y terminara de pedir numeros
+			if (num>!0) {
+			total=total+num;
+			}
+			else{
+				alert("Numero invalido");
+			}
+		} while(num>0);
+
+	//Con document by ID lo que hago el reemplazar el texto de Este sera tu resultado con el total de la suma
+		document.getElementById("texto").innerHTML=total;
+	}
+	</script>
+	<!--Mando llamar en html la funcion a travez de un boton usando onclick-->
+	<input type="button" value="Suma!" onclick="sumatoria();">
+</body>
+</html>
